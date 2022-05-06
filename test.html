@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <div class="title">Just neet to add the Jscript of Jquery, and the two on the bottom off body tag.
+        <br> to test just open the console with F12, and write FakeAnHour(X), replace the X with the hour that you want
+        <br> then just wait 5 seconds and the magic happends
+    </div>
+
+    <div id="tests">
+        <div id="aidi" class="box"> aidi<br> target:3<br> max 12</div>
+        <div id="dos" class="box"> dos<br> target:10<br> max 12</div>
+        <div id="tres" class="box"> tres<br> target:18<br> max 12</div>
+    </div>
+
+    <div> The structure its:  </div>
+
+    <!-- NEEDED SCRIPTS-->
+    <script src="HourDistanceCalculator.js"></script>
+    <script src="ImageTransitionController.js"></script>
+
+    <!-- TEST VALUES-->
+    <script>
+        AddImage("aidi",3,12);
+        AddImage("dos",10,12);
+        AddImage("tres",18,12);
+    </script>
+</body>
+</html>
+
+<style>
+    #tests {
+        display: flex;
+
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 2vw;
+    }
+
+    #aidi {background-color:red;}
+    #dos {background-color:blue;}
+    #tres {background-color:greenyellow;}
+
+    .box {
+        font-size: 3vw;
+        font-family: sans-serif;
+        height: 30vw;
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
